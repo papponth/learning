@@ -41,5 +41,3 @@ print ('\n')
 for k in list_result_next_num:
     for n in k[3]:
         print (n[1])
-
-
