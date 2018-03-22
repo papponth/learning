@@ -11,6 +11,8 @@ class IPv4RandomNetwork(IPv4Network):
         return not (self.is_private or self.is_multicast)
 
 
+
+
 i=0
 while i < 50:
     ipnet = IPv4RandomNetwork()
