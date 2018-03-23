@@ -11,4 +11,3 @@ for file in glob.iglob ("/home/ag/cloud/Seafile/p4ne/p4ne_training/config_files/
 
 
 print (sorted(list(set(addresslist))))
-

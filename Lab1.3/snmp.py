@@ -1,10 +1,8 @@
 from pysnmp.hlapi import *
 
 
-
 identity_num = ObjectIdentity ('1.3.6.1.2.1.2.2.1.2')
 identity_char = ObjectIdentity ('SNMPv2-MIB', 'sysDescr', 0)
-
 
 
 result_get_char = (getCmd(SnmpEngine(),
@@ -28,8 +26,6 @@ list_result_next_num = list (result_next_num)
 
 print (list_result_get_char, '\n')
 print (list_result_next_num, '\n')
-
-
 
 
 for k in list_result_get_char:
