@@ -8,9 +8,11 @@ class IPv4RandomNetwork(IPv4Network):
     def regular(self):
         return not (self.is_private or self.is_multicast)
 
-i=0
-while i < 50:
+ipv4list=[]
+
+while len(ipv4list) < 50:
     ipnet = IPv4RandomNetwork()
     if ipnet.regular():
-        print(ipnet)
-        i +=1
+        ipv4list.append(str(ipnet))
+
+print(sorted(ipv4list))
