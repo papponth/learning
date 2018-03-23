@@ -19,3 +19,6 @@ while i < 50:
     if ipnet.regular():
         print(ipnet)
         i +=1
+
+
+
