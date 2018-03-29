@@ -22,11 +22,9 @@ def parceconfig (somelinefromfile):
     return answer
 
 
-
 listofip = []
 #listofint = []
 #listofhost = []
-
 
 
 for file in glob.iglob ("/home/ag/cloud/Seafile/p4ne/p4ne_training/config_files/*.txt"):
