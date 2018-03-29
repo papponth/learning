@@ -3,8 +3,6 @@ import glob
 import ipaddress
 import openpyxl
 
-
-
 def parceconfig (somelinefromfile):
     frsttry = re.match("^\s*ip address ((?:[0-9]{1,3}\.?){4}) ((?:[0-9]{1,3}\.?){4})", str(somelinefromfile))
     scndtry = re.match("^\s*interface (.*)$", str(somelinefromfile))
