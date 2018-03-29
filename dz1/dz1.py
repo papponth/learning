@@ -11,12 +11,12 @@ def parceconfig (somelinefromfile):
         ipwithmask = str(frsttry.group(1)) + "/" + str(frsttry.group(2))
         #answer = {"ip": ipaddress.IPv4Interface(ipwithmask)}
         answer = {"ip": ipaddress.IPv4Network(ipwithmask,strict=False).with_netmask}
-    elif bool(scndtry):
-        interf = scndtry.group(1)
-        answer = {"int": interf}
-    elif bool(thrdtry):
-        host = thrdtry.group(1)
-        answer = {"host": host}
+    #elif bool(scndtry):
+    #    interf = scndtry.group(1)
+    #    answer = {"int": interf}
+    #elif bool(thrdtry):
+    #    host = thrdtry.group(1)
+    #    answer = {"host": host}
     else:
         answer = {}
     return answer
